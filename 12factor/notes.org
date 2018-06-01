@@ -1,0 +1,49 @@
+* Plan
+** Intro & Codebase
+   This will talk about some of the motivation and history of
+   12-Factor apps. Then I do a little on codebases. I don't jump too
+   deep though as there is so much around it already.
+** Dependencies
+   Talk about dependency management projects.
+   Touch briefly on issues with current solutions
+   mention projects that are working on improving this (Bazel, Nix,
+   reproducible-builds.org)
+   
+   - Talk about the requirements.txt file.
+   - Add a dependency (reading csv files)
+   - Allow for simple queries
+** Dev/Prod parity
+   - Start running code in a docker container
+** Processes
+   - Write some tests
+   - Setup CI/CD
+   - .gitlabrc file
+** Config
+   Refer to previous blog post
+** Backing Services
+   - move csv files to S3
+   - caching with DynamoDB...
+** Port binding
+   - not necessary for lambda
+** Concurrency
+   - free...
+** Disposability
+   - free...
+** Logs
+   - cloudwatch?
+** Admin processes
+   - let's think about this some more...
+   - triggered lambda functions?
+
+* Notes
+  It is beneficial to try and put this all together using an
+  overarching narrative. I am wanting to build an application and
+  describe these 12 factors through that lens. Hopefully it will give
+  a more intuitive feel for the reasons behind them.
+
+  with this in mind, I need to think of something that isn't /too/
+  silly to build.
+** Wrapup Ideas
+   Might be fun to talk about the pre-flight checklists and this could
+   be considered a service-setup checklistfor when one is setting up a
+   new project.
